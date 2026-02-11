@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../index.html');
+    src: url('../index.html') format('embedded-opentype'),
+        url('SegoeUI-Semibold.woff2') format('woff2'),
+        url('SegoeUI-Semibold.woff') format('woff'),
+        url('SegoeUI-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'Segoe UI';
+}
+li{ list-style: none;}
+.pooo{background-color: #edebeb;}
+.showlist{
+
+transition: all 200ms 0s;
+display: block;
+}
+.hiden{
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+.showflex{display: flex;}
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      height: 60px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: #9ca3af;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+.bullet {
+  width: 8px;
+  height: 8px;
+  background: #9ca3af;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.bullet.active {
+  background: #000;
+}
+.liiii{background-color: #454545;}
+.custom-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #d1d5db; /* خاکستری */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-bullet.active {
+  background-color: #111111; /* آبی */
+  transform: scale(1.3);
+}
