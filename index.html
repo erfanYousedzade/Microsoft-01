@@ -22,6 +22,12 @@
     />
   </head>
   <body class="body w-full max-w-full overflow-x-hidden">
+    <div class="warring w-[100%] h-[100px] flex mb-[20px] bg-[#c3c1c0] hidden">
+      <p class="w-[65%] pl-[20px]">We use optional cookies to improve your experience on our websites, such as through social media connections, and to display personalised advertising based on your online activity. If you reject optional cookies, only cookies necessary to provide you the services will be used. You may change your selection by clicking 'Manage Cookies' at the bottom of the page.<span class="text-[blue]">Statement Third-Party Cookies</span> </p>
+      <button class="ml-[17px] bg-[gray] w-[130px] h-[30px] mt-[30px] delet">Accept</button>
+      <button class="ml-[17px] bg-[gray] w-[130px] h-[30px] mt-[30px] delet1">Reject</button>
+      <button class="ml-[17px] bg-[gray] w-[130px] h-[30px] mt-[30px] delet2">Manege Cookies</button>
+    </div>
     <div class="nav lg:flex hidden">
       <div class="navleft flex absolute left-[5%] left-[5%] -translate-x-5/100">
         <li class=""><img src="images/microsoft.png" class="w-27 pt-4" /></li>
@@ -67,14 +73,14 @@
               >Smal Busines</span
             >
         </li>
-        <li class="pl-6 pt-5 text-[13px] lilg8 hidden lg:flex showlist">
+        <li class="pl-6 pt-5 text-[13px] lilg8  !lg:flex  showlist">
           <span
-              class="relative inline-block cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[black] hover:after:w-full"
+              class="relative inline-block cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[black] hover:after:w-full "
               >Suport</span
             >
         </li>
       </div>
-      <div class="navright showflex absolute left-70/100 -translate-x-5/100">
+      <div class="navright showflex absolute left-73/100 -translate-x-5/100">
         <li class="pl-8 pt-5 text-[13px] micro lilg">
           <span
               class="relative inline-block cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[black] hover:after:w-full"
@@ -103,20 +109,20 @@
     </div>
     <div class="navlg relative flex items-center lg:hidden h-14">
       <div class="navl flex pl-4">
-        <i class="bi bi-justify pr-5 text-[20px] hamber"></i
+        <i class="bi bi-justify pr-5 text-[20px] hamber ifirst1 "></i
         ><i class="bi bi-x-lg zarb hidden pr-5 text-[20px]"></i>
-        <i class="bi bi-search text-[20px]"></i>
+        <i class="bi bi-search text-[20px] jssearch2 ifirst2"></i>
       </div>
       <div class="navr flex ml-auto pr-4">
-        <i class="bi bi-cart pr-5 text-[20px]"></i>
-        <i class="bi bi-person-add text-[20px]"></i>
+        <i class="bi bi-cart pr-5 text-[20px] ifirst3 "></i>
+        <i class="bi bi-person-add text-[20px] ifirst4 "></i>
       </div>
-      <div class="navcen absolute left-1/2 -translate-x-1/2">
+      <div class="navcen absolute left-1/2 -translate-x-1/2 ifirst5">
         <img src="images/microsoft.png" class="w-[120px]" />
       </div>
     </div>
 
-    <!--js search -->
+    <!--js search lg -->
     <div class="jssearch mt-3 hidden">
       <input
         type="search"
@@ -128,6 +134,17 @@
       >
         cancel
       </button>
+    </div>
+        <!--js search sm -->
+    <div class="jssearch3 mt-[-45px] hidden h-[50px] pt-[10px]">
+      <i class="bi bi-arrow-left text-[20px] pl-[20px] pt-[-100px] canceli  relative z-50 "></i>
+      <input
+        type="search"
+        placeholder="searchMicrosoft.com"
+        class="absolute left-[10%] w-[80%] border-2 border-blue-700 pl-3 h-[25px] mt-[5px]"
+      /><i class="bi bi-search pl-[5px] pr-[10px] text-[gray] text-[10px]"></i>
+    
+      
     </div>
     <!--acor -->
     <div class="acor absolute lg:hidden w-[100%] bg-[#edebeb] hidden z-20">

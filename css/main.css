@@ -55,7 +55,7 @@ display: block;
 .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
-  background: #9ca3af;
+  background: #b0b3b8;
   border-radius: 50%;
   opacity: 1;
 }
@@ -74,17 +74,17 @@ display: block;
 .bullet.active {
   background: #000;
 }
-.liiii{background-color: #faefdf;}
+.liiii{background-color: #c3c1c0;}
 .custom-bullet {
   width: 8px;
   height: 8px;
   border-radius: 9999px;
-  background-color: #d1d5db; /* خاکستری */
+  background-color: #d1d5db; 
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .custom-bullet.active {
-  background-color: #111111; /* آبی */
+  background-color: #111111; 
   transform: scale(1.3);
 }

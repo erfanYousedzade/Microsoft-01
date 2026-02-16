@@ -169,6 +169,40 @@ cancel.addEventListener("click", function () {
 });
 ////////////////////////////////////js search(end)
 
+////////////////////////////////////js search sm(first)
+let jssearch2 = document.querySelector(".jssearch2");
+let jssearch3 = document.querySelector(".jssearch3");
+let ifirst1 = document.querySelector(".ifirst1");
+let ifirst2 = document.querySelector(".ifirst2");
+let ifirst3 = document.querySelector(".ifirst3");
+let ifirst4 = document.querySelector(".ifirst4");
+let ifirst5 = document.querySelector(".ifirst5");
+let canceli = document.querySelector(".canceli");
+
+jssearch2.addEventListener("click", function () {
+  ifirst1.classList.add("hidden");
+  ifirst2.classList.add("hidden");
+  ifirst3.classList.add("hidden");
+  ifirst4.classList.add("hidden");
+  ifirst5.classList.add("hidden");
+
+  jssearch3.classList.remove("hidden");
+  jssearch3.classList.add("showlist");
+});
+
+canceli.addEventListener("click", function () {
+  console.log("helo");
+  
+  jssearch3.classList.remove("showlist");
+  jssearch3.classList.add("hidden");
+
+  ifirst1.classList.remove("hidden");
+  ifirst2.classList.remove("hidden");
+  ifirst3.classList.remove("hidden");
+  ifirst4.classList.remove("hidden");
+  ifirst5.classList.remove("hidden");
+});
+////////////////////////////////////js search sm(end)
 var swiper = new Swiper(".mySwiper", {
   rewind: true,
   autoplay: {
@@ -269,8 +303,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+/////warring
+let delet=document.querySelector(".delet");
+let delet1=document.querySelector(".delet1");
+let delet2=document.querySelector(".delet2");
+let warring=document.querySelector(".warring");
+delet.addEventListener("click",function(){
+warring.classList.add("hidden")
+}) 
+delet1.addEventListener("click",function(){
+warring.classList.add("hidden")
+}) 
+delet2.addEventListener("click",function(){
+warring.classList.add("hidden")
+}) 
 
 
-
+if (window.matchMedia("(min-width: 1024px)").matches) {
+  setTimeout(function () {
+    warring.classList.remove("hidden");
+  }, 2000);
+}
 
 
