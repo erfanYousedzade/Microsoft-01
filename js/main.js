@@ -324,5 +324,43 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
     warring.classList.remove("hidden");
   }, 2000);
 }
+  const backToTop = document.getElementById("backToTop");
+  const footer = document.getElementById("footer");
 
+  function isDesktop() {
+    return window.innerWidth >= 768; // md در Tailwind
+  }
+
+  function showBtn() {
+    backToTop.classList.remove("opacity-0", "pointer-events-none");
+    backToTop.classList.add("opacity-100");
+  }
+
+  function hideBtn() {
+    backToTop.classList.add("opacity-0", "pointer-events-none");
+    backToTop.classList.remove("opacity-100");
+  }
+
+  window.addEventListener("scroll", () => {
+    if (!isDesktop()) return;
+
+    if (window.scrollY > 60) {
+      showBtn();
+    } else {
+      hideBtn();
+    }
+
+    let footerTop = footer.getBoundingClientRect().top;
+    let windowHeight = window.innerHeight;
+
+    if (footerTop < windowHeight) {
+      backToTop.style.bottom = "120px";
+    } else {
+      backToTop.style.bottom = "30%";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 
