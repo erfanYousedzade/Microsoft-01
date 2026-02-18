@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="body w-full max-w-full overflow-x-hidden">
+<html lang="en" class=" scroll-smooth body w-full max-w-full overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,14 +14,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-
+  <link rel="icon" href="images/icon.png">
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body class="body w-full max-w-full overflow-x-hidden">
+  <body id="top" class="body w-full max-w-full overflow-x-hidden">
     <div class="warring w-[100%] h-[100px] flex mb-[20px] bg-[#c3c1c0] hidden">
       <p class="w-[65%] pl-[20px]">We use optional cookies to improve your experience on our websites, such as through social media connections, and to display personalised advertising based on your online activity. If you reject optional cookies, only cookies necessary to provide you the services will be used. You may change your selection by clicking 'Manage Cookies' at the bottom of the page.<span class="text-[blue]">Statement Third-Party Cookies</span> </p>
       <button class="ml-[17px] bg-[gray] w-[130px] h-[30px] mt-[30px] delet">Accept</button>
@@ -1048,7 +1048,18 @@
   </div>
 </div>
 
+<div
 
+  class="absolute right-[3%] mt-[-60px] z-50 bg-[#a5a4a4]  px-4 py-2  cursor-pointer 
+           transition-all duration-300  hover:bg-[#f7f5f5] "
+><a
+  href="#top"
+
+>
+  <i class="bi bi-arrow-up"></i> Back to top
+</a>
+  
+</div>
     <div
       class="foter1 bg-[#f2f2f2] w-full flex justify-around h-auto flex-wrap"
     >
@@ -1439,7 +1450,7 @@
   class="fixed right-[3%] bottom-[5%] z-50 bg-[#a5a4a4]  px-4 py-2  cursor-pointer 
           pointer-events-none transition-all duration-300 hidden md:block hover:bg-[#f7f5f5] "
 >
-  Back to top
+ <i class="bi bi-arrow-up"></i> Back to top
 </div>
 
 

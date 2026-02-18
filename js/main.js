@@ -343,7 +343,7 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
   window.addEventListener("scroll", () => {
     if (!isDesktop()) return;
 
-    if (window.scrollY > 60) {
+    if (window.scrollY > 60 && window.scrollY < 2600 ) {
       show();
     } else {
       hide();
