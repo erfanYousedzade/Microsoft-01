@@ -216,7 +216,7 @@ var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    type: "bullets", // دایره‌ها
+    type: "bullets", 
   },
 });
 
@@ -253,7 +253,7 @@ toggleBtn.addEventListener("click", () => {
 ////////////////////////////////////////////////// slide <lg
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ساخت اسلایدر
+
   const swiper = new Swiper(".customSwiper", {
     loop: true,
     autoplay: {
@@ -262,19 +262,18 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-  // دکمه بعدی
   document.querySelector(".custom-next")
     .addEventListener("click", () => {
       swiper.slideNext();
     });
 
-  // دکمه قبلی
+ 
   document.querySelector(".custom-prev")
     .addEventListener("click", () => {
       swiper.slidePrev();
     });
 
-  // توقف / پخش
+
   const toggleBtn = document.querySelector(".custom-toggle");
   toggleBtn.addEventListener("click", () => {
     if (swiper.autoplay.running) {
@@ -295,7 +294,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // سینک شدن دایره‌ها با اسلاید
   swiper.on("slideChange", () => {
     bullets.forEach((b, i) => {
       b.classList.toggle("active", i === swiper.realIndex);
@@ -324,19 +322,20 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
     warring.classList.remove("hidden");
   }, 2000);
 }
-  const backToTop = document.getElementById("backToTop");
-  const footer = document.getElementById("footer");
+////////////////////////////dokmeh
+  let backToTop = document.getElementById("backToTop");
+  let footer = document.getElementById("footer");
 
   function isDesktop() {
-    return window.innerWidth >= 768; // md در Tailwind
+    return window.innerWidth >= 768; 
   }
 
-  function showBtn() {
+  function show() {
     backToTop.classList.remove("opacity-0", "pointer-events-none");
     backToTop.classList.add("opacity-100");
   }
 
-  function hideBtn() {
+  function hide() {
     backToTop.classList.add("opacity-0", "pointer-events-none");
     backToTop.classList.remove("opacity-100");
   }
@@ -345,19 +344,12 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
     if (!isDesktop()) return;
 
     if (window.scrollY > 60) {
-      showBtn();
+      show();
     } else {
-      hideBtn();
+      hide();
     }
 
-    let footerTop = footer.getBoundingClientRect().top;
-    let windowHeight = window.innerHeight;
 
-    if (footerTop < windowHeight) {
-      backToTop.style.bottom = "120px";
-    } else {
-      backToTop.style.bottom = "30%";
-    }
   });
 
   backToTop.addEventListener("click", () => {
